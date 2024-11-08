@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "greeting_backend": {
+      "candid": "src/greeting_backend/greeting_backend.did",
+      "package": "greeting_backend",
+      "type": "rust"
+    },
+    "greeting_frontend": {
+      "dependencies": [
+        "greeting_backend"
+      ],
+      "source": [
+        "src/greeting_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "greeting_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

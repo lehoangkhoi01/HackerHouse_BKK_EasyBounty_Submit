@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/greeting_backend"
+]
+resolver = "2"
